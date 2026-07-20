@@ -1,0 +1,20 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>下载YAML配置文件</title>
+</head>
+<body>
+<h3>文件正在自动下载，若无弹窗请点下方按钮</h3>
+<a href="xiao.yaml" download="xiao.yaml">手动下载yaml文件</a>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  let link = document.createElement('a');
+  link.href = 'xiao.yaml';
+  link.download = 'xiao.yaml';
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+})
+</script>
+</body>
+</html>
